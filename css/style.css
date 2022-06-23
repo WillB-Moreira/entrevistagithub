@@ -1,16 +1,28 @@
 header{
     width: 100%;
     height: 50px;
-    background-color: #000000;
+    /*background-color: #000000;*/
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,69,0,1) 58%);
 }
+
+hr{
+    color: #f64d27;
+
+}
+main{
+    margin-top: 10px;
+}
+
 header #logo{
     text-align: center;
     padding-top: 10px;
 }
 /*pai*/
 #menu-lateral{
-    background-color: aqua;
+  
     width: 159px;
+    float: left;
     
 }
 
@@ -25,32 +37,52 @@ nav ul{
 }
 
 bisneto*/
-
 nav ul li{
   
     text-transform: uppercase;
+    list-style-type:none;
+    padding-left: 10px;
 
 }
-
 /*tataraneto*/
-
 nav ul li a{
    
     text-decoration: none;
+    color: #000000;
 
+}nav ul li a:hover{
+   
+    text-decoration: none;
+    color: #f64d27;
+    font-weight: bold;
 }
 
 #menu-lateral nav ul li{
-    padding-top: 9px;
-    list-style: none;
-    font-size: 12px;
+    padding-top: 4px;
+    font-size: 9px;
 }
 #comandos
     {background-color: aquamarine;
 
-
-    }footer #rodape{
-        background-color: #000000;
-        color: aliceblue;
+}
+    #rodape{
+        margin-top: 10px;
         text-align: center;
+        background: darkkhaki;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,69,0,1) 58%);
+        color: aliceblue;
+        font-size: 12px;
+        height: 25px;
+}
+#area-principal{
+        width: 1010px;   
+        border:2px solid lightcoral;
+        height: 500px;
+        margin-left: 100px;
+
+}   
+
+    footer{
+        margin-top: 10px;
 }
