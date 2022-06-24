@@ -3,30 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Escola Front-End Curso Git e GitHub</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/reset.css">
-
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="/resources/demos/style.css">
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+     <script>
+     $( function() {
+     $( "#draggable" ).draggable();
+     } );
+     </script>
 </head>
 <body>
-      <header>
-            <div id="logo">
-              <img src="logos/GitHub-Logos/GitHub_Logo_White.png" width="120">
-            </div>
-           
-           
-      </header>
 
-      <main>
-        <section id="menu-lateral" >
+    <header>
+        <div id="logo">
+            <img src="logos/GitHub_Logo_White.png" width="120">
+        </div>
+        
+    </header>
+
+    <main>
+
+        <section id="menu-lateral">
             <nav>
-              <ul>
+                <ul>
                 <li><a href="index.html"><img src="logos/index.png" title width="20"> Mural de Avisos </a></li>
                 <li><a href="configuracoes.html"><img src="logos/engrenagem.png" width="20"> configurações </a></li>
                 <li><a href="aulas.html"><img src="logos/aula.png" width="20"> Aulas </a></li>
                 <li><a href="podcast.html"><img src="logos/podcast.png" width="20"> PodCast </a></li>
-                <li><a href="testes.html"><img src="logos/testes.png" width="20"> Testes </a></li>
+                <li><a href="testes.html"><img src="logos/teste.png" width="20"> Testes </a></li>
                 <li><a href="laboratorio.html"><img src="logos/laboratorio.png" width="20"> laboratório </a></li>
                 <li><a href="mapamental.html"><img src="logos/mapamental.png" width="20"> mapamental </a></li>
                 <li><a href="googlesala.html"><img src="logos/google.png" width="20"> Google Sala </a></li>
@@ -38,95 +49,95 @@
                 <li><a href="whatsapp.html"><img src="logos/whatsapp.png" width="20"> whatsapp </a></li>
                 <li><a href="branch.html"><img src="logos/branch.png" width="20"> branch </a></li>
                 <li><a href="salas.html"><img src="logos/sala.png" width="20"> sala </a></li>
-              
-               
                 <li><a href="dontpad.html"><img src="logos/dontpad.png" width="20"> DontPad </a></li>
               </ul>
             </nav>
         </section>
         <section id="area-principal">
-            <h1>Mural</h1>
+            <h5>Mural de avisos <span class="badge text-bg-warning"> Novo</span></h5>
+            <div id="draggable" class="ui-widget-content">
+                Carreta 5G                
+            </div>
+                    
         </section>
-
-       <!-- Tabela de Comandos Git
-
-        <table id="comandos" border="3">
-           <tr>
-               <th>Descrição</th>
-               <th>Comando</th>
-           </tr>
-           <tr>
-                <td>Ver a versão</td>
-                <td>git --version</td>
-           </tr>
-           <tr>
-                <td>Criar a pasta</td>
-                <td>mk dir nome da pasta </td>
-           </tr>
-           <tr>
-                <td>Inicializar o repositório</td>
+        <!-- <section id="comandos">
+        Tabela de comandos Git
+   
+       <table  border="3">
+            <tr>
+                <th>Descrição</th>
+                <th>Comando</th>                
+            <tr>
+                <td>ver a versão</td>
+                <td>git -- version</td>
+            </tr>
+            <tr>
+                <td>Criar Pasta</td>
+                <td>mkdir "nome da pasta"</td>
+            </tr>
+            <tr>
+                <td>Iniciarlizar Repositorio  </td>
                 <td>git init</td>
-          </tr>
-          <tr>
-            <td>Visualizar informações</td>
-            <td>git status</td>
-          </tr>
-          <tr>
-            <td>Listar recurso da pasta</td>
-            <td>ls</td>
-          </tr>
-          <tr>
-            <td>Navegar nas pastas</td>
-            <td>cd ou cd ..</td>
-          </tr>
-          <tr>
-            <td>Abrir nano</td>
-            <td>nano nome do arquivo</td>
-          </tr>
-          <tr>
-            <td>Fechar nano</td>
-            <td>CTRL + X</td>
-          </tr>
-          <tr>
-            <td>Quem é você?</td>
-            <td>git config --local user.name "seu nome" e user.email "seu email"</td>
-          </tr>
-          <tr>
-            <td>Listar os commits</td>
-            <td>git log ou git log --oneline ou git log -p obs: use q para sair</td>
-          </tr>
-          <tr>
-            <td>Ignorar arquivo</td>
-            <td>Criar o arquivo .gitignore, depois adicionar e "commitar"</td>
-          </tr>
-          <tr>
-            <td>listar repositório remoto</td>
-            <td>git remote</td>
-          </tr>
-          <tr>
-            <td>Adicionar repositório</td>
-            <td>git remote add origin url do repositório</td>
-          </tr>
-          <tr>
-            <td>Enviar para o remoto com  -u</td>
-            <td>git push -u origin master, depois use git push</td>
-          </tr>
-          <tr>
-            <td>Desfazer um commit</td>
-            <td>git revert coloque o hash do seu commit</td>
-          </tr>
-
-
-        </table>-->
-
-
-      </main>
-
-      <footer>
-        <p id="rodape"> Curso Git-Github &copy; 2022 - Villiam Moreira</p>
-
-      </footer>
-
+            </tr>
+            <tr>
+                <td>Visualizar Informações</td>
+                <td>git status </td>
+            </tr>
+            <tr>
+                <td>Listar recurso da pasta</td>
+                <td>ls </td>
+            </tr>
+            <tr>
+                <td>Navegar nas pastas</td>
+                <td>CD ou CD ..</td>
+            </tr>
+            <tr>
+                <td>Abrir nano</td>
+                <td>nano "nome do arquivo"</td>
+            </tr>
+            <tr>
+                <td>Fechar nano</td>
+                <td>CTRL = X</td>
+            </tr>
+            <tr>
+                <td>Quem é você ?</td>
+                <td>git config --local user.name "seu nome"  e user.email " seu e-mail "</td>
+            </tr>
+            <tr>
+                <td>Listar os Commits </td>
+                <td>git log ou git log --onelone ou git log -p obs: use "Q" para sair </td>
+            </tr>
+            <tr>
+                <td>Ignorar Arquivo</td>
+                <td>Criar o Arquivo .gitignore , depois Adicionar "Git add "nome" "  e depois "Commitar"</td>
+            </tr>
+            <tr>
+                <td>Listar Repositório remoto</td>
+                <td>git remote</td>
+            </tr>
+            <tr>
+                <td>Adicionar Repositório</td>
+                <td>git remote add origin "url do Repositório"</td>
+            </tr>
+            <tr>
+                <td>Enviar para o remoto com -u</td>
+                <td>git push -u origin master , depois use o git push</td>
+            </tr>
+            <tr>
+                <td>Desfazer um commit</td>
+                <td>git revert "cololoque o hash do seu commit"</td>
+            </tr>
+        
+        
+        </table>
     
+    </section> -->
+    </main>
+
+    <footer>
+      <p id="rodape">  Curso Git-GitHub &copy 2022 - Bruno Queiroz</p>
+    </footer>
+
+
 </body>
 </html>

@@ -61,10 +61,11 @@ nav ul li a{
     padding-top: 4px;
     font-size: 9px;
 }
-#comandos
-    {background-color: aquamarine;
+#comandos{
 
-}
+    background-color: aquamarine;
+
+}footer
     #rodape{
         margin-top: 10px;
         text-align: center;
@@ -76,13 +77,38 @@ nav ul li a{
         height: 25px;
 }
 #area-principal{
-        width: 1010px;   
-        border:2px solid lightcoral;
-        height: 500px;
-        margin-left: 100px;
+        width: 1750px;   
+        height: 650px;
+        margin-left: 150px;
 
 }   
+.postit-laranja{
+    border: 2px solid orange;
 
-    footer{
-        margin-top: 10px;
+}
+#draggable {
+    width: 75px;
+    height: 75px;    
+    color: black;
+    border: 2px solid rgb(17, 17, 17);
+}
+.paragrafo-um{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+}
+.paragrafo-dois{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #f64d27;
+}
+.paragrafo-tres{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: gray;
+}
+.paragrafo-quatro{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
 }
